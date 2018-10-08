@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Req agent:</strong>
+  <%= @requisicao.req_agent %>
+</p>
+
+<p>
+  <strong>Req encode:</strong>
+  <%= @requisicao.req_encode %>
+</p>
+
+<p>
+  <strong>Acao:</strong>
+  <%= @requisicao.acao %>
+</p>
+
+<%= link_to 'Edit', edit_requisicao_path(@requisicao) %> |
+<%= link_to 'Back', requisicaos_path %>

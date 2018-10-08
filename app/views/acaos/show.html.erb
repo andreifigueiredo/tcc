@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Acao nome:</strong>
+  <%= @acao.acao_nome %>
+</p>
+
+<p>
+  <strong>Acao classe:</strong>
+  <%= @acao.acao_classe %>
+</p>
+
+<p>
+  <strong>Exc:</strong>
+  <%= @acao.exc %>
+</p>
+
+<%= link_to 'Edit', edit_acao_path(@acao) %> |
+<%= link_to 'Back', acaos_path %>

@@ -1,0 +1,32 @@
+<%= form_with(model: requisicao, local: true) do |form| %>
+  <% if requisicao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(requisicao.errors.count, "error") %> prohibited this requisicao from being saved:</h2>
+
+      <ul>
+      <% requisicao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :req_agent %>
+    <%= form.text_field :req_agent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_encode %>
+    <%= form.text_field :req_encode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acao_id %>
+    <%= form.text_field :acao_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

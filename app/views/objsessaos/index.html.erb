@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Objsessaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Obj text</th>
+      <th>Sessao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @objsessaos.each do |objsessao| %>
+      <tr>
+        <td><%= objsessao.obj_text %></td>
+        <td><%= objsessao.sessao %></td>
+        <td><%= link_to 'Show', objsessao %></td>
+        <td><%= link_to 'Edit', edit_objsessao_path(objsessao) %></td>
+        <td><%= link_to 'Destroy', objsessao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Objsessao', new_objsessao_path %>

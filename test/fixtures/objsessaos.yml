@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  obj_text: MyText
+  sessao: one
+
+two:
+  obj_text: MyText
+  sessao: two

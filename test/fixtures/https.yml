@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  view_referer: MyText
+  view_url: MyText
+  view_method: MyText
+  req: one
+
+two:
+  view_referer: MyText
+  view_url: MyText
+  view_method: MyText
+  req: two

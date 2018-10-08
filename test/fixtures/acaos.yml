@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acao_nome: MyString
+  acao_classe: MyString
+  exc: one
+
+two:
+  acao_nome: MyString
+  acao_classe: MyString
+  exc: two

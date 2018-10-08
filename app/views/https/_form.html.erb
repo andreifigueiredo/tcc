@@ -1,0 +1,37 @@
+<%= form_with(model: http, local: true) do |form| %>
+  <% if http.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(http.errors.count, "error") %> prohibited this http from being saved:</h2>
+
+      <ul>
+      <% http.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :view_referer %>
+    <%= form.text_area :view_referer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :view_url %>
+    <%= form.text_area :view_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :view_method %>
+    <%= form.text_area :view_method %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_id %>
+    <%= form.text_field :req_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

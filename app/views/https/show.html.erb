@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>View referer:</strong>
+  <%= @http.view_referer %>
+</p>
+
+<p>
+  <strong>View url:</strong>
+  <%= @http.view_url %>
+</p>
+
+<p>
+  <strong>View method:</strong>
+  <%= @http.view_method %>
+</p>
+
+<p>
+  <strong>Req:</strong>
+  <%= @http.req %>
+</p>
+
+<%= link_to 'Edit', edit_http_path(@http) %> |
+<%= link_to 'Back', https_path %>

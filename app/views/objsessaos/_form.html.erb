@@ -1,0 +1,27 @@
+<%= form_with(model: objsessao, local: true) do |form| %>
+  <% if objsessao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(objsessao.errors.count, "error") %> prohibited this objsessao from being saved:</h2>
+
+      <ul>
+      <% objsessao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :obj_text %>
+    <%= form.text_area :obj_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sessao_id %>
+    <%= form.text_field :sessao_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

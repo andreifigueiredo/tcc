@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Https</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>View referer</th>
+      <th>View url</th>
+      <th>View method</th>
+      <th>Req</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @https.each do |http| %>
+      <tr>
+        <td><%= http.view_referer %></td>
+        <td><%= http.view_url %></td>
+        <td><%= http.view_method %></td>
+        <td><%= http.req %></td>
+        <td><%= link_to 'Show', http %></td>
+        <td><%= link_to 'Edit', edit_http_path(http) %></td>
+        <td><%= link_to 'Destroy', http, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Http', new_http_path %>

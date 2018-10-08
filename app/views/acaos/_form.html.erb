@@ -1,0 +1,32 @@
+<%= form_with(model: acao, local: true) do |form| %>
+  <% if acao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(acao.errors.count, "error") %> prohibited this acao from being saved:</h2>
+
+      <ul>
+      <% acao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :acao_nome %>
+    <%= form.text_field :acao_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acao_classe %>
+    <%= form.text_field :acao_classe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exc_id %>
+    <%= form.text_field :exc_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

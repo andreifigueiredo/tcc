@@ -1,0 +1,2 @@
+module WsdlServiceHelper
+end

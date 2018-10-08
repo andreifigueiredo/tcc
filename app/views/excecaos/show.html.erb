@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @excecao.data %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @excecao.hora %>
+</p>
+
+<%= link_to 'Edit', edit_excecao_path(@excecao) %> |
+<%= link_to 'Back', excecaos_path %>

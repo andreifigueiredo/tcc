@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  param_tipo: MyString
+  param_nome: MyString
+  req: one
+
+two:
+  param_tipo: MyString
+  param_nome: MyString
+  req: two

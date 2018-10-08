@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  req_agent: MyString
+  req_encode: MyString
+  acao: one
+
+two:
+  req_agent: MyString
+  req_encode: MyString
+  acao: two

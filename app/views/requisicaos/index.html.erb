@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Requisicaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Req agent</th>
+      <th>Req encode</th>
+      <th>Acao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requisicaos.each do |requisicao| %>
+      <tr>
+        <td><%= requisicao.req_agent %></td>
+        <td><%= requisicao.req_encode %></td>
+        <td><%= requisicao.acao %></td>
+        <td><%= link_to 'Show', requisicao %></td>
+        <td><%= link_to 'Edit', edit_requisicao_path(requisicao) %></td>
+        <td><%= link_to 'Destroy', requisicao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Requisicao', new_requisicao_path %>
