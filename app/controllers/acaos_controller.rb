@@ -69,6 +69,6 @@ class AcaosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def acao_params
-      params.require(:acao).permit(:acao_nome, :acao_classe, :exc_id)
+      params.require(:acao).permit(:acao_nome, :acao_classe, :excecao_id)
     end
 end

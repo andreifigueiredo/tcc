@@ -1,3 +1,3 @@
 class Acao < ApplicationRecord
-  belongs_to :exc
+  belongs_to :excecao
 end
